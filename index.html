@@ -26,7 +26,15 @@
 
 	<link href="assets/css/main.css" rel="stylesheet">
 
-
+<style>
+	.logo img {
+		max-width: 100%;
+		height: auto;
+		display: block;
+		width: 300px; /* Ajusta este tamaño según lo que necesites */
+		object-fit: contain; /* Asegura que la imagen se adapte al contenedor */
+	  }
+</style>
 </head>
 
 <body class="index-page">
@@ -34,9 +42,14 @@
 	<header id="header" class="header d-flex align-items-center sticky-top">
 		<div class="container-fluid container-xl position-relative d-flex align-items-center">
 
-		<a href="index.html" class="logo d-flex align-items-center me-auto">
-			<!-- <img src="./assets/img/logo-lightl.jpg" alt="" > -->
-			<h1 class="sitename">Cinema Studio CYC</h1>
+		<a href="index.html" class="logo d-flex align-items-center me-auto" aria-label="anchor para logo">
+			<img 
+				src="./assets/img/light-logo.webp"
+				alt="logo"
+				id="logo" 
+				data-light-logo="./assets/img/light-logo.webp" 
+    			data-dark-logo="./assets/img/dark-logo.webp"
+			>
 		</a>
 
 		<nav id="navmenu" class="navmenu">
@@ -1051,13 +1064,7 @@
 					</div>
 					<i class="faq-toggle bi bi-chevron-right"></i>
 				</div>
-				<div class="faq-item">
-					<h3>¿Cuánto tiempo estarán presentes en el evento?</h3>
-					<div class="faq-content">
-						<p>Enim ea facilis quaerat voluptas quidem et dolorem. Quis et consequatur non sed in suscipit sequi. Distinctio ipsam dolore et.</p>
-					</div>
-					<i class="faq-toggle bi bi-chevron-right"></i>
-				</div>
+			
 				<div class="faq-item">
 					<h3>¿Necesitan algún espacio especial para instalarse o trabajar?</h3>
 					<div class="faq-content">
@@ -1101,13 +1108,7 @@
 					</div>
 					<i class="faq-toggle bi bi-chevron-right"></i>
 				</div>
-				<div class="faq-item">
-					<h3>¿Puedo elegir qué fotos o videos se incluyen en el trabajo final?</h3>
-					<div class="faq-content">
-						<p>Enim ea facilis quaerat voluptas quidem et dolorem. Quis et consequatur non sed in suscipit sequi. Distinctio ipsam dolore et.</p>
-					</div>
-					<i class="faq-toggle bi bi-chevron-right"></i>
-				</div>
+			
 				<div class="faq-item">
 					<h3>¿Ofrecen servicios adicionales de edición, como agregar efectos especiales?</h3>
 					<div class="faq-content">
@@ -1115,27 +1116,8 @@
 					</div>
 					<i class="faq-toggle bi bi-chevron-right"></i>
 				</div>
-				<div class="faq-item">
-					<h3>¿Cómo se entregan las fotografías y los videos (USB, enlace de descarga, etc.)?</h3>
-					<div class="faq-content">
-						<p>Enim ea facilis quaerat voluptas quidem et dolorem. Quis et consequatur non sed in suscipit sequi. Distinctio ipsam dolore et.</p>
-					</div>
-					<i class="faq-toggle bi bi-chevron-right"></i>
-				</div>
-				<div class="faq-item">
-					<h3>¿Puedo solicitar copias adicionales del material entregado?</h3>
-					<div class="faq-content">
-						<p>Enim ea facilis quaerat voluptas quidem et dolorem. Quis et consequatur non sed in suscipit sequi. Distinctio ipsam dolore et.</p>
-					</div>
-					<i class="faq-toggle bi bi-chevron-right"></i>
-				</div>
-				<div class="faq-item">
-					<h3>¿Cuánto cuestan sus servicios?</h3>
-					<div class="faq-content">
-						<p>Enim ea facilis quaerat voluptas quidem et dolorem. Quis et consequatur non sed in suscipit sequi. Distinctio ipsam dolore et.</p>
-					</div>
-					<i class="faq-toggle bi bi-chevron-right"></i>
-				</div>
+			
+			
 				<div class="faq-item">
 					<h3>¿Qué métodos de pago aceptan?</h3>
 					<div class="faq-content">
@@ -1179,6 +1161,7 @@
 					</div>
 					<i class="faq-toggle bi bi-chevron-right"></i>
 				</div>
+				
 				<div class="faq-item">
 					<h3>¿Pueden garantizar la recuperación de los archivos si algo falla durante el evento?</h3>
 					<div class="faq-content">
@@ -1186,6 +1169,7 @@
 					</div>
 					<i class="faq-toggle bi bi-chevron-right"></i>
 				</div>
+
 				<div class="faq-item">
 					<h3>¿Tienen seguros o garantías para el trabajo realizado?</h3>
 					<div class="faq-content">
@@ -1193,27 +1177,9 @@
 					</div>
 					<i class="faq-toggle bi bi-chevron-right"></i>
 				</div>
-				<div class="faq-item">
-					<h3>¿Dónde están ubicados?</h3>
-					<div class="faq-content">
-						<p>Enim ea facilis quaerat voluptas quidem et dolorem. Quis et consequatur non sed in suscipit sequi. Distinctio ipsam dolore et.</p>
-					</div>
-					<i class="faq-toggle bi bi-chevron-right"></i>
-				</div>
-				<div class="faq-item">
-					<h3>¿Cómo puedo contactarlos para más información?</h3>
-					<div class="faq-content">
-						<p>Enim ea facilis quaerat voluptas quidem et dolorem. Quis et consequatur non sed in suscipit sequi. Distinctio ipsam dolore et.</p>
-					</div>
-					<i class="faq-toggle bi bi-chevron-right"></i>
-				</div>
-				<div class="faq-item">
-					<h3>¿Tienen referencias de clientes anteriores?</h3>
-					<div class="faq-content">
-						<p>Enim ea facilis quaerat voluptas quidem et dolorem. Quis et consequatur non sed in suscipit sequi. Distinctio ipsam dolore et.</p>
-					</div>
-					<i class="faq-toggle bi bi-chevron-right"></i>
-				</div>
+				
+			
+				
 				<div class="faq-item">
 					<h3>¿Qué los diferencia de otras empresas de fotografía y video?</h3>
 					<div class="faq-content">
@@ -1221,6 +1187,7 @@
 					</div>
 					<i class="faq-toggle bi bi-chevron-right"></i>
 				</div>
+
 				<div class="faq-item">
 					<h3>¿Cuáles son sus horarios de atención?</h3>
 					<div class="faq-content">

@@ -42,11 +42,13 @@
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the same color scheme. */
 
 .light-background {
+  --body-color: hsl(var(--hue-color), 60%, 99%);
   --background-color: hsl(var(--hue-color), 92%, 95%); /* Light, soft background color */
   --surface-color: #FFF; /* Clear white surface for elements within light backgrounds */
 }
 
 .dark-background {
+  --body-color: hsl(var(--hue-color), 28%, 12%);
   --background-color: hsl(var(--hue-color), 28%, 12%); /* Very dark background for contrast-heavy sections */
   --default-color: hsl(var(--hue-color), 8%, 95%); /* High-contrast text color for dark backgrounds */
   --heading-color: hsl(var(--hue-color), 8%, 95%); /* Consistent heading color on dark backgrounds */

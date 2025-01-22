@@ -10,10 +10,10 @@ const toggleButton = document.getElementById('theme-toggle')
 				element.classList.replace('light-background', 'dark-background')
 			})
 			toggleButton.querySelector('i').classList.replace('bi-moon', 'bi-sun')
-
-			// if (logo) {
-			// 	logo.src = logo.getAttribute('data-dark-logo')
-			// }
+			document.body.classList.add('dark-theme')
+			if (logo) {
+				logo.src = logo.getAttribute('data-dark-logo')
+			}
 
 		} else if (mode === 'light' || (darkElements.length > 0 && mode === undefined)) {
 
@@ -21,8 +21,11 @@ const toggleButton = document.getElementById('theme-toggle')
 				element.classList.replace('dark-background', 'light-background')
 			})
 			toggleButton.querySelector('i').classList.replace('bi-sun', 'bi-moon')
+			document.body.classList.remove('dark-theme')
 
-			// 2
+			if (logo) {
+				logo.src = logo.getAttribute('data-light-logo')
+			}
 		}
 	}
 	function detectSystemTheme() {

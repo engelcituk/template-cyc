@@ -22,9 +22,7 @@ const toggleButton = document.getElementById('theme-toggle')
 			})
 			toggleButton.querySelector('i').classList.replace('bi-sun', 'bi-moon')
 
-			// if (logo) {
-			// 	logo.src = logo.getAttribute('data-light-logo')
-			// }
+			// 2
 		}
 	}
 	function detectSystemTheme() {

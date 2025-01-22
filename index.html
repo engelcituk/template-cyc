@@ -27,7 +27,10 @@
 	<link href="assets/css/main.css" rel="stylesheet">
 
 <style>
-	
+	#theme-toggle {
+		margin-left: auto;
+		margin-right: 0; /* Asegura que el botón no esté pegado al borde izquierdo */
+	}
 </style>
 </head>
 
@@ -36,91 +39,91 @@
 	<header id="header" class="header d-flex align-items-center sticky-top bg-header">
 		<div class="container-fluid container-xl position-relative d-flex align-items-center">
 
-		<a href="index.html" class="logo d-flex align-items-center me-auto" aria-label="anchor para logo">
-			<img 
-				src="./assets/img/light-logo.png"
-				alt="logo"
-				id="logo" 
-				data-light-logo="./assets/img/light-logo.png" 
-    			data-dark-logo="./assets/img/dark-logo.png"
-			>
-		</a>
+			<a href="index.html" class="logo d-flex align-items-center me-auto" aria-label="anchor para logo">
+				<img 
+					src="./assets/img/light-logo.png"
+					alt="logo"
+					id="logo" 
+					data-light-logo="./assets/img/light-logo.png" 
+					data-dark-logo="./assets/img/dark-logo.png"
+				>
+			</a>
 
-		<nav id="navmenu" class="navmenu">
-			<ul>
-				<li><a href="#hero" class="active">Inicio<br></a></li>
-				<li class="dropdown">
-					<a href="#">
-						<span>Eventos</span>
+			<nav id="navmenu" class="navmenu">
+				<ul>
+					<li><a href="#hero" class="active">Inicio<br></a></li>
+					<li class="dropdown">
+						<a href="#">
+							<span>Eventos</span>
+							<i class="bi bi-chevron-down toggle-dropdown"></i>
+						</a>
+						<ul>
+							<li><a href="#">Bodas</a></li>           
+							<li><a href="#">XV Años</a></li>
+							<li><a href="#">Bautizos</a></li>
+							<li><a href="#">Lugares</a></li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a href="#">
+							<span>Catering</span>
+							<i class="bi bi-chevron-down toggle-dropdown"></i>
+						</a>
+						<ul>
+						<li><a href="#">Tipos de servicio</a></li>           
+						<li><a href="#">Lugares</a></li>             
+						</ul>
+					</li>
+					<li><a href="#about">Bar</a></li>
+					<li><a href="#services">Diseño</a></li>
+					<li class="dropdown">
+						<a href="#">
+						<span>Florales</span>
 						<i class="bi bi-chevron-down toggle-dropdown"></i>
-					</a>
-					<ul>
+						</a>
+						<ul>
+						<li><a href="#">Eventos</a></li> 
 						<li><a href="#">Bodas</a></li>           
 						<li><a href="#">XV Años</a></li>
 						<li><a href="#">Bautizos</a></li>
-						<li><a href="#">Lugares</a></li>
-					</ul>
-				</li>
-				<li class="dropdown">
-					<a href="#">
-						<span>Catering</span>
-						<i class="bi bi-chevron-down toggle-dropdown"></i>
-					</a>
-					<ul>
-					<li><a href="#">Tipos de servicio</a></li>           
-					<li><a href="#">Lugares</a></li>             
-					</ul>
-				</li>
-				<li><a href="#about">Bar</a></li>
-				<li><a href="#services">Diseño</a></li>
-				<li class="dropdown">
-					<a href="#">
-					<span>Florales</span>
-					<i class="bi bi-chevron-down toggle-dropdown"></i>
-					</a>
-					<ul>
-					<li><a href="#">Eventos</a></li> 
-					<li><a href="#">Bodas</a></li>           
-					<li><a href="#">XV Años</a></li>
-					<li><a href="#">Bautizos</a></li>
-					<li><a href="#">Diseños</a></li>
-					</ul>
-				</li>
-				<li class="dropdown">
-					<a href="#">
-						<span>Nosotros</span>
-						<i class="bi bi-chevron-down toggle-dropdown"></i>
-					</a>
-					<ul>
-					<li><a href="#">Contact</a></li> 
-					<li><a href="#">Portafolio</a></li>                         
-					</ul>
-				</li>  
-				<li>					
-					<button
-						type="button"
-						class="btn btn-light"
-						title="dark-light-mode" 
-						aria-label="dark-light-mode"
-						id="theme-toggle"
-					>
-						<i class="bi bi-moon"></i>
-						
-					</button>				
-				</li>
-			</ul>
-			<i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-		</nav>
-
+						<li><a href="#">Diseños</a></li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a href="#">
+							<span>Nosotros</span>
+							<i class="bi bi-chevron-down toggle-dropdown"></i>
+						</a>
+						<ul>
+						<li><a href="#">Contact</a></li> 
+						<li><a href="#">Portafolio</a></li>                         
+						</ul>
+					</li>  
+					<li>					
+						<button
+							type="button"
+							class="btn btn-light"
+							title="dark-light-mode" 
+							aria-label="dark-light-mode"
+							id="theme-toggle"							
+							style="background: transparent; border: none; color: inherit; margin-left: .5rem;"
+						>
+							<i class="bi bi-moon"></i>							
+						</button>				
+					</li>
+				</ul>
+				<i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+				
+			</nav>
 		
-		<a
-			href="https://wa.me/529831552534?text=¡Hola!%20Quiero%20más%20información%20sobre%20sus%20servicios%20de%20grabación%20y%20fotografía." 
-				class="btn-getstarted"
-				target="_blank" 
-				rel="noopener noreferrer"
-			>
-				Dale vida a tu evento		  
-		</a>
+			<a
+				href="https://wa.me/529831552534?text=¡Hola!%20Quiero%20más%20información%20sobre%20sus%20servicios%20de%20grabación%20y%20fotografía." 
+					class="btn-getstarted"
+					target="_blank" 
+					rel="noopener noreferrer"
+				>
+					Dale vida a tu evento		  
+			</a>
 		</div>
 	</header>
 

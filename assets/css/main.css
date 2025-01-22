@@ -24,7 +24,7 @@
   --background-color: hsl(var(--hue-color), 60%, 99%); /* Background color for the entire website, including individual sections */
   --default-color: hsl(var(--hue-color), 8%, 45%); /* Default color used for the majority of the text content across the entire website */
   --heading-color: hsl(var(--hue-color), 8%, 15%); /* Color for headings, subheadings and title throughout the website */
-  --accent-color: hsl(var(--hue-color), 69%, 61%); /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --first-color: hsl(var(--hue-color), 69%, 61%); /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #FFF; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: hsl(var(--hue-color), 8%, 95%); /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
@@ -93,7 +93,7 @@ body.dark-theme {
   --background-color: hsl(var(--hue-color), 69%, 61%); /* Bright and bold accent color for backgrounds */
   --default-color: #FFF; /* Contrasting white text for accent backgrounds */
   --heading-color: #FFF; /* White headings for readability */
-  --accent-color: hsl(var(--hue-color), 92%, 85%); /* Lighter shade for accents */
+  --first-color: hsl(var(--hue-color), 92%, 85%); /* Lighter shade for accents */
   --surface-color: hsl(var(--hue-color), 57%, 53%); /* Soft, muted accent surface */
   --contrast-color: #FFF; /* Consistent white contrast text */
 }
@@ -113,13 +113,13 @@ body {
 }
 
 a {
-  color: var(--accent-color);
+  color: var(--first-color);
   text-decoration: none;
   transition: 0.3s;
 }
 
 a:hover {
-  color: color-mix(in srgb, var(--accent-color), transparent 25%);
+  color: color-mix(in srgb, var(--first-color), transparent 25%);
   text-decoration: none;
 }
 
@@ -139,7 +139,7 @@ h6 {
 .pulsating-play-btn {
   width: 94px;
   height: 94px;
-  background: radial-gradient(var(--accent-color) 50%, color-mix(in srgb, var(--accent-color), transparent 75%) 52%);
+  background: radial-gradient(var(--first-color) 50%, color-mix(in srgb, var(--first-color), transparent 75%) 52%);
   border-radius: 50%;
   display: block;
   position: relative;
@@ -158,7 +158,7 @@ h6 {
   animation-timing-function: steps;
   opacity: 1;
   border-radius: 50%;
-  border: 5px solid color-mix(in srgb, var(--accent-color), transparent 30%);
+  border: 5px solid color-mix(in srgb, var(--first-color), transparent 30%);
   top: -15%;
   left: -15%;
   background: rgba(198, 16, 0, 0);
@@ -197,7 +197,7 @@ h6 {
 }
 
 .pulsating-play-btn:hover:after {
-  border-left: 15px solid var(--accent-color);
+  border-left: 15px solid var(--first-color);
   transform: scale(20);
 }
 
@@ -250,7 +250,7 @@ h6 {
   width: 24px;
   height: 24px;
   margin: 0 10px -6px 0;
-  border: 3px solid var(--accent-color);
+  border: 3px solid var(--first-color);
   border-top-color: var(--surface-color);
   animation: php-email-form-loading 1s linear infinite;
 }
@@ -274,7 +274,7 @@ h6 {
   padding: 20px 0;
   transition: all 0.5s;
   z-index: 997;
-  border-bottom: 1px solid color-mix(in srgb, var(--accent-color), transparent 85%);
+  border-bottom: 1px solid color-mix(in srgb, var(--first-color), transparent 85%);
 }
 
 
@@ -297,7 +297,7 @@ h6 {
 .header .btn-getstarted,
 .header .btn-getstarted:focus {
   color: var(--contrast-color);
-  background: var(--accent-color);
+  background: var(--first-color);
   font-size: 14px;
   padding: 8px 25px;
   margin: 0 0 0 30px;
@@ -308,7 +308,7 @@ h6 {
 .header .btn-getstarted:hover,
 .header .btn-getstarted:focus:hover {
   color: var(--contrast-color);
-  background: color-mix(in srgb, var(--accent-color), transparent 15%);
+  background: color-mix(in srgb, var(--first-color), transparent 15%);
 }
 
 @media (max-width: 1200px) {
@@ -499,12 +499,12 @@ h6 {
     justify-content: center;
     border-radius: 50%;
     transition: 0.3s;
-    background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
+    background-color: color-mix(in srgb, var(--first-color), transparent 90%);
   }
 
   .navmenu a i:hover,
   .navmenu a:focus i:hover {
-    background-color: var(--accent-color);
+    background-color: var(--first-color);
     color: var(--contrast-color);
   }
 
@@ -516,7 +516,7 @@ h6 {
 
   .navmenu .active i,
   .navmenu .active:focus i {
-    background-color: var(--accent-color);
+    background-color: var(--first-color);
     color: var(--contrast-color);
     transform: rotate(180deg);
   }
@@ -575,7 +575,7 @@ h6 {
 .footer {
   color: var(--default-color);
   background-color: var(--background-color);
-  border-top: 1px solid color-mix(in srgb, var(--accent-color), transparent 80%);
+  border-top: 1px solid color-mix(in srgb, var(--first-color), transparent 80%);
   font-size: 14px;
   padding-bottom: 50px;
   position: relative;
@@ -615,17 +615,17 @@ h6 {
   width: 40px;
   height: 40px;
   border-radius: 4px;
-  border: 1px solid color-mix(in srgb, var(--accent-color), transparent 50%);
+  border: 1px solid color-mix(in srgb, var(--first-color), transparent 50%);
   font-size: 16px;
-  color: var(--accent-color);
+  color: var(--first-color);
   margin-right: 10px;
   transition: 0.3s;
 }
 
 .footer .social-links a:hover {
-  background-color: var(--accent-color);
+  background-color: var(--first-color);
   color: var(--contrast-color);
-  border-color: var(--accent-color);
+  border-color: var(--first-color);
 }
 
 .footer h4 {
@@ -668,7 +668,7 @@ h6 {
 }
 
 .footer .footer-links ul a:hover {
-  color: var(--accent-color);
+  color: var(--first-color);
 }
 
 .footer .footer-contact p {
@@ -678,7 +678,7 @@ h6 {
 .footer .copyright {
   padding-top: 25px;
   padding-bottom: 25px;
-  background-color: var(--accent-color);
+  background-color: var(--first-color);
   color: var(--contrast-color);
 }
 
@@ -713,7 +713,7 @@ h6 {
   top: calc(50% - 30px);
   left: calc(50% - 30px);
   border: 6px solid #ffffff;
-  border-color: var(--accent-color) transparent var(--accent-color) transparent;
+  border-color: var(--first-color) transparent var(--first-color) transparent;
   border-radius: 50%;
   width: 60px;
   height: 60px;
@@ -740,7 +740,7 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 99999;
-  background-color: var(--accent-color);
+  background-color: var(--first-color);
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -754,7 +754,7 @@ h6 {
 }
 
 .scroll-top:hover {
-  background-color: color-mix(in srgb, var(--accent-color), transparent 20%);
+  background-color: color-mix(in srgb, var(--first-color), transparent 20%);
   color: var(--contrast-color);
 }
 
@@ -919,7 +919,7 @@ section,
 
 .hero .btn-get-started {
   color: var(--contrast-color);
-  background: var(--accent-color);
+  background: var(--first-color);
   font-weight: 600;
   font-size: 16px;
   letter-spacing: 0.5px;
@@ -931,7 +931,7 @@ section,
 }
 
 .hero .btn-get-started:hover {
-  background: color-mix(in srgb, var(--accent-color), transparent 15%);
+  background: color-mix(in srgb, var(--first-color), transparent 15%);
 }
 
 .hero .icon-box {
@@ -962,6 +962,7 @@ section,
   font-size: 15px;
   margin-bottom: 0;
   color: color-mix(in srgb, var(--title-color), transparent 40%);
+  
 }
 
 .hero .icon-box .icon {
@@ -971,7 +972,7 @@ section,
   transition: all 0.3s ease-in-out;
   font-size: 36px;
   line-height: 1;
-  color: var(--accent-color);
+  color: var(--first-color);
 }
 
 @media (min-width: 640px) {
@@ -980,7 +981,7 @@ section,
   }
 
   .hero .icon-box:hover .title a {
-    color: var(--accent-color);
+    color: var(--first-color);
   }
 }
 
@@ -1001,11 +1002,11 @@ section,
 .about ul i {
   font-size: 20px;
   padding-right: 4px;
-  color: var(--accent-color);
+  color: var(--first-color);
 }
 
 .about .read-more {
-  background: var(--accent-color);
+  background: var(--first-color);
   color: var(--contrast-color);
   font-family: var(--heading-font);
   font-weight: 500;
@@ -1027,7 +1028,7 @@ section,
 }
 
 .about .read-more:hover {
-  background: color-mix(in srgb, var(--accent-color), transparent 20%);
+  background: color-mix(in srgb, var(--first-color), transparent 20%);
 }
 
 .about .read-more:hover i {
@@ -1049,7 +1050,7 @@ section,
 .stats .stats-item span {
   font-size: 48px;
   display: block;
-  color: var(--accent-color);
+  color: var(--first-color);
   font-weight: 700;
 }
 
@@ -1081,7 +1082,7 @@ section,
 }
 
 .about-alt .content ul i {
-  color: var(--accent-color);
+  color: var(--first-color);
   margin-right: 0.5rem;
   line-height: 1.2;
   font-size: 1.25rem;
@@ -1167,7 +1168,7 @@ section,
 
 .testimonials .testimonial-item .quote-icon-left,
 .testimonials .testimonial-item .quote-icon-right {
-  color: color-mix(in srgb, var(--accent-color), transparent 50%);
+  color: color-mix(in srgb, var(--first-color), transparent 50%);
   font-size: 26px;
   line-height: 0;
 }
@@ -1211,11 +1212,11 @@ section,
   height: 12px;
   background-color: var(--background-color);
   opacity: 1;
-  border: 1px solid var(--accent-color);
+  border: 1px solid var(--first-color);
 }
 
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: var(--accent-color);
+  background-color: var(--first-color);
 }
 
 /*--------------------------------------------------------------
@@ -1382,7 +1383,7 @@ section,
 
 .call-to-action .cta-btn:hover {
   background: var(--surface-color);
-  color: var(--accent-color);
+  color: var(--first-color);
 }
 
 /*--------------------------------------------------------------
@@ -1411,7 +1412,7 @@ section,
 
 .portfolio .portfolio-filters li:hover,
 .portfolio .portfolio-filters li.filter-active {
-  color: var(--accent-color);
+  color: var(--first-color);
 }
 
 .portfolio .portfolio-filters li:first-child {
@@ -1472,7 +1473,7 @@ section,
 
 .portfolio .portfolio-item .portfolio-info .preview-link:hover,
 .portfolio .portfolio-item .portfolio-info .details-link:hover {
-  color: var(--accent-color);
+  color: var(--first-color);
 }
 
 .portfolio .portfolio-item .portfolio-info .details-link {
@@ -1526,7 +1527,7 @@ section,
 
 .team .team-member .social a:hover {
   color: var(--contrast-color);
-  background: var(--accent-color);
+  background: var(--first-color);
 }
 
 .team .team-member .social i {
@@ -1575,7 +1576,7 @@ section,
 
 .pricing h4 {
   font-size: 48px;
-  color: var(--accent-color);
+  color: var(--first-color);
   font-family: var(--heading-font);
   font-weight: 400;
 }
@@ -1636,8 +1637,8 @@ section,
 }
 
 .pricing .buy-btn:hover {
-  background: var(--accent-color);
-  border-color: var(--accent-color);
+  background: var(--first-color);
+  border-color: var(--first-color);
   color: var(--contrast-color);
 }
 
@@ -1646,7 +1647,7 @@ section,
 }
 
 .pricing .featured .pricing-item {
-  background: var(--accent-color);
+  background: var(--first-color);
 }
 
 @media (min-width: 992px) {
@@ -1666,7 +1667,7 @@ section,
 }
 
 .pricing .featured .buy-btn {
-  background: var(--accent-color);
+  background: var(--first-color);
   color: var(--contrast-color);
   border-color: var(--contrast-color);
 }
@@ -1704,12 +1705,12 @@ section,
 }
 
 .faq .faq-container .faq-item h3 .num {
-  color: var(--accent-color);
+  color: var(--first-color);
   padding-right: 5px;
 }
 
 .faq .faq-container .faq-item h3:hover {
-  color: var(--accent-color);
+  color: var(--first-color);
 }
 
 .faq .faq-container .faq-item .faq-content {
@@ -1736,12 +1737,12 @@ section,
 }
 
 .faq .faq-container .faq-item .faq-toggle:hover {
-  color: var(--accent-color);
+  color: var(--first-color);
 }
 
 .faq .faq-container .faq-active {
-  background-color: var(--accent-color);
-  border-color: var(--accent-color);
+  background-color: var(--first-color);
+  border-color: var(--first-color);
   color: var(--contrast-color);
 }
 
@@ -1758,7 +1759,7 @@ section,
 
 .faq .faq-container .faq-active .faq-toggle {
   transform: rotate(90deg);
-  color: var(--accent-color);
+  color: var(--first-color);
 }
 
 /*--------------------------------------------------------------
@@ -1770,7 +1771,7 @@ section,
 
 .contact .info-item i {
   color: var(--contrast-color);
-  background: var(--accent-color);
+  background: var(--first-color);
   font-size: 20px;
   width: 44px;
   height: 44px;
@@ -1814,7 +1815,7 @@ section,
 .contact .php-email-form input[type=text]:focus,
 .contact .php-email-form input[type=email]:focus,
 .contact .php-email-form textarea:focus {
-  border-color: var(--accent-color);
+  border-color: var(--first-color);
 }
 
 .contact .php-email-form input[type=text]::placeholder,
@@ -1825,7 +1826,7 @@ section,
 
 .contact .php-email-form button[type=submit] {
   color: var(--contrast-color);
-  background: var(--accent-color);
+  background: var(--first-color);
   border: 0;
   padding: 10px 30px;
   transition: 0.4s;
@@ -1833,7 +1834,7 @@ section,
 }
 
 .contact .php-email-form button[type=submit]:hover {
-  background: color-mix(in srgb, var(--accent-color), transparent 20%);
+  background: color-mix(in srgb, var(--first-color), transparent 20%);
 }
 
 /*--------------------------------------------------------------
@@ -1893,7 +1894,7 @@ section,
 }
 
 .portfolio-details .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: var(--accent-color);
+  background-color: var(--first-color);
 }
 
 .portfolio-details .portfolio-info h3 {
@@ -1910,7 +1911,7 @@ section,
   display: block;
   width: 50px;
   height: 3px;
-  background: var(--accent-color);
+  background: var(--first-color);
   left: 0;
   bottom: 0;
 }
@@ -1936,14 +1937,14 @@ section,
 
 .portfolio-details .portfolio-info .btn-visit {
   padding: 8px 40px;
-  background: var(--accent-color);
+  background: var(--first-color);
   color: var(--contrast-color);
   border-radius: 50px;
   transition: 0.3s;
 }
 
 .portfolio-details .portfolio-info .btn-visit:hover {
-  background: color-mix(in srgb, var(--accent-color), transparent 20%);
+  background: color-mix(in srgb, var(--first-color), transparent 20%);
 }
 
 .portfolio-details .portfolio-description h2 {
@@ -1986,7 +1987,7 @@ section,
 
 .portfolio-details .portfolio-description .testimonial-item .quote-icon-left,
 .portfolio-details .portfolio-description .testimonial-item .quote-icon-right {
-  color: color-mix(in srgb, var(--accent-color), transparent 50%);
+  color: color-mix(in srgb, var(--first-color), transparent 50%);
   font-size: 26px;
   line-height: 0;
 }
@@ -2034,11 +2035,11 @@ section,
 .service-details .services-list a.active {
   color: var(--heading-color);
   font-weight: 700;
-  border-color: var(--accent-color);
+  border-color: var(--first-color);
 }
 
 .service-details .services-list a:hover {
-  border-color: var(--accent-color);
+  border-color: var(--first-color);
 }
 
 .service-details .services-img {
@@ -2074,7 +2075,7 @@ section,
 .service-details ul i {
   font-size: 20px;
   margin-right: 8px;
-  color: var(--accent-color);
+  color: var(--first-color);
 }
 
 /*--------------------------------------------------------------

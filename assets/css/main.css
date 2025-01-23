@@ -1638,8 +1638,9 @@ section,
 }
 
 .pricing .buy-btn {
-  color: color-mix(in srgb, var(--default-color), transparent 40%);
-  background-color: var(--background-color);
+  color: #fff;
+ 
+  background:  var(--first-color);
   display: inline-block;
   padding: 8px 35px 10px 35px;
   border-radius: 4px;
@@ -1652,9 +1653,10 @@ section,
 }
 
 .pricing .buy-btn:hover {
-  background: var(--first-color);
+  /* background: var(--first-color); */
   border-color: var(--first-color);
   color: var(--contrast-color);
+  background: color-mix(in srgb, var(--first-color), transparent 15%);
 }
 
 .pricing .featured {
@@ -1678,17 +1680,23 @@ section,
 .pricing .featured ul .na,
 .pricing .featured ul i,
 .pricing .featured ul .na i {
-  color: var(--title-color);
+  color: #fff;
+}
+
+.featured .pricing-item ul li span{
+  color: #fff;
 }
 
 .pricing .featured .buy-btn {
-  background: var(--first-color);
+  /* background: var(--first-color); */
+  background: color-mix(in srgb, var(--first-color), transparent 92%);
   color: var(--contrast-color);
   border-color: var(--contrast-color);
+
 }
 
 .pricing .featured .buy-btn:hover {
-  background: color-mix(in srgb, var(--background-color), transparent 92%);
+  background: color-mix(in srgb, var(--first-color), transparent 92%);
 }
 
 /*--------------------------------------------------------------

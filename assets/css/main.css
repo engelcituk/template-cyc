@@ -908,13 +908,16 @@ section,
   margin: 0;
   font-size: 56px;
   font-weight: 700;
-  line-height: 72px;
+  line-height: 72px;  
+  color: #000;
 }
 
 .hero p {
   margin: 10px 0 0 0;
   font-size: 22px;
-  color: color-mix(in srgb, var(--default-color), transparent 30%);
+  /* color: color-mix(in srgb, var(--default-color), transparent 30%); */
+  color: #000;
+
 }
 
 @media (max-width: 992px) {
@@ -1753,17 +1756,17 @@ section,
 }
 
 .faq .faq-container .faq-item .faq-toggle:hover {
-  color: var(--first-color);
+  color: var(--body-color);
 }
 
 .faq .faq-container .faq-active {
-  background-color: var(--first-color);
-  border-color: var(--first-color);
-  color: var(--contrast-color);
+  background-color: var(--body-color);
+  border-color: var(--body-color);
+  color: var(--title-color);
 }
 
 .faq .faq-container .faq-active h3 {
-  color: var(--contrast-color);
+  color: var(--title-color);
 }
 
 .faq .faq-container .faq-active .faq-content {

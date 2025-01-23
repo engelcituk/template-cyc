@@ -129,8 +129,11 @@ h3,
 h4,
 h5,
 h6 {
-  color: var(--heading-color);
+  color: var(--title-color);
   font-family: var(--heading-font);
+}
+p, span{
+  color: var(--title-color);
 }
 
 
@@ -821,10 +824,13 @@ h6 {
 section,
 .section {
   color: var(--default-color);
-  background-color: var(--background-color);
+  /* background-color: var(--background-color); */
+  background-color: var(--container-color);
+
   padding: 60px 0;
   scroll-margin-top: 100px;
   overflow: clip;
+  /* border-bottom: 5px solid color-mix(in srgb, var(--first-color), transparent 85%); */
 }
 
 @media (max-width: 1199px) {
@@ -890,6 +896,12 @@ section,
 .hero .container {
   position: relative;
   z-index: 3;
+  border-bottom: 1px solid color-mix(in srgb, var(--first-color), transparent 85%);
+
+}
+
+.border-bottom {
+  border-bottom: 4px solid color-mix(in srgb, var(--first-color), transparent 85%);
 }
 
 .hero h1 {
@@ -1163,6 +1175,8 @@ section,
 .testimonials .testimonial-item h4 {
   font-size: 14px;
   color: color-mix(in srgb, var(--default-color), transparent 20%);
+  color: var(--title-color);
+
   margin: 0 0 0 45px;
 }
 
@@ -1191,7 +1205,9 @@ section,
   font-style: italic;
   margin: 0 15px 0 15px;
   padding: 20px 20px 60px 20px;
-  background: color-mix(in srgb, var(--default-color), transparent 97%);
+  /* background: color-mix(in srgb, var(--default-color), transparent 97%); */
+  background-color: var(--body-color);
+  color: var(--title-color);
   position: relative;
   border-radius: 6px;
   position: relative;
@@ -1210,7 +1226,7 @@ section,
 .testimonials .swiper-pagination .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
-  background-color: var(--background-color);
+  background-color: var(--body-color);
   opacity: 1;
   border: 1px solid var(--first-color);
 }
@@ -1223,7 +1239,7 @@ section,
 # Services Section
 --------------------------------------------------------------*/
 .services .service-item {
-  background-color: var(--surface-color);
+  background-color: var(--body-color);
   box-shadow: 0px 5px 90px 0px rgba(0, 0, 0, 0.1);
   height: 100%;
   padding: 60px 30px;
@@ -1360,11 +1376,11 @@ section,
 .call-to-action h3 {
   font-size: 28px;
   font-weight: 700;
-  color: var(--default-color);
+  color: var(--title-color);
 }
 
 .call-to-action p {
-  color: var(--default-color);
+  color: var(--title-color);
 }
 
 .call-to-action .cta-btn {
@@ -1377,8 +1393,8 @@ section,
   border-radius: 5px;
   transition: 0.5s;
   margin: 10px;
-  border: 2px solid var(--contrast-color);
-  color: var(--contrast-color);
+  border: 2px solid var(--first-color);
+  color: var(--title-color);
 }
 
 .call-to-action .cta-btn:hover {
@@ -1808,7 +1824,7 @@ section,
   box-shadow: none;
   border-radius: 0;
   color: var(--default-color);
-  background-color: color-mix(in srgb, var(--background-color), transparent 50%);
+  background-color: color-mix(in srgb, var(--body-color), transparent 50%);
   border-color: color-mix(in srgb, var(--default-color), transparent 80%);
 }
 
@@ -1889,7 +1905,7 @@ section,
 .portfolio-details .swiper-pagination .swiper-pagination-bullet {
   width: 10px;
   height: 10px;
-  background-color: color-mix(in srgb, var(--default-color), transparent 85%);
+  background-color: color-mix(in srgb, var(--body-color), transparent 85%);
   opacity: 1;
 }
 
@@ -1988,6 +2004,7 @@ section,
 .portfolio-details .portfolio-description .testimonial-item .quote-icon-left,
 .portfolio-details .portfolio-description .testimonial-item .quote-icon-right {
   color: color-mix(in srgb, var(--first-color), transparent 50%);
+  color: var(--body-color);  
   font-size: 26px;
   line-height: 0;
 }

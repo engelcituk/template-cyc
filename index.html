@@ -31,6 +31,8 @@
 		margin-left: auto;
 		margin-right: 0; /* Asegura que el botón no esté pegado al borde izquierdo */
 	}
+
+
 </style>
 </head>
 
@@ -223,7 +225,7 @@
 
 			<div class="container ">
 
-				<div class="row gy-4">
+				<div class="row gy-4" style="position: relative;">
 
 					<div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
 						<p>
@@ -249,11 +251,12 @@
 					  </p>
 					  <a href="#about" class="read-more"><span>Conoce más sobre nosotros</span><i class="bi bi-arrow-right"></i></a>
 					</div>
-				  
-				  </div>
+					
+				</div>
 				  
 			</div>
 
+			
 		</section>
 
 		
@@ -646,103 +649,218 @@
 			<div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
 
 			<ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-				<li data-filter="*" class="filter-active">All</li>
-				<li data-filter=".filter-app">App</li>
-				<li data-filter=".filter-product">Card</li>
-				<li data-filter=".filter-branding">Web</li>
+				<li data-filter="*" class="filter-active">Todos</li>
+				<li data-filter=".filter-wedding">Bodas</li>
+				<li data-filter=".filter-xv">XV años</li>
+				<li data-filter=".filter-infant">Infantiles</li>
 			</ul>
 
 			<div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
 
-				<div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-				<img src="assets/img/masonry-portfolio/masonry-portfolio-1.jpg" class="img-fluid" alt="">
-				<div class="portfolio-info">
-					<h4>App 1</h4>
-					<p>Lorem ipsum, dolor sit</p>
-					<a href="assets/img/masonry-portfolio/masonry-portfolio-1.jpg" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-					<a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-				</div>
-				</div>
-
-				<div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-				<img src="assets/img/events-pictures/4.webp" class="img-fluid" alt="">
-				<div class="portfolio-info">
-					<h4>Product 1</h4>
-					<p>Lorem ipsum, dolor sit</p>
-					<a href="assets/img/events-pictures/4.webp" title="Product 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-					<a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-				</div>
+				<div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-wedding">
+					<img src="assets/img/events-pictures/wedding-1.webp" class="img-fluid" alt="">
+					<div class="portfolio-info">
+						<h4> Boda 1</h4>
+						<p>Pareja numero 1</p>
+						<a 
+							href="assets/img/events-pictures/wedding-1.webp"
+							title="Pareja Número 1"
+							data-gallery="portfolio-gallery-wedding"
+							class="glightbox preview-link"
+						>
+							<i class="bi bi-zoom-in"></i>
+						</a>
+						
+					</div>
 				</div>
 
-				<div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-				<img src="assets/img/events-pictures/5.webp" class="img-fluid" alt="">
-				<div class="portfolio-info">
-					<h4>Branding 1</h4>
-					<p>Lorem ipsum, dolor sit</p>
-					<a href="assets/img/events-pictures/5.webp" title="Branding 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-					<a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-				</div>
-				</div>
-
-				<div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-				<img src="assets/img/masonry-portfolio/masonry-portfolio-4.jpg" class="img-fluid" alt="">
-				<div class="portfolio-info">
-					<h4>App 2</h4>
-					<p>Lorem ipsum, dolor sit</p>
-					<a href="assets/img/masonry-portfolio/masonry-portfolio-4.jpg" title="App 2" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-					<a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-				</div>
+				<div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-xv">
+					<img src="assets/img/events-pictures/xv-1.webp" class="img-fluid" alt="">
+					<div class="portfolio-info">
+						<h4>Quinceañera 1</h4>
+						<p>Quinceañera número 1</p>
+						<a 
+							href="assets/img/events-pictures/xv-1.webp"
+							title="Quinceañera 1"
+							data-gallery="portfolio-gallery-xv"
+							class="glightbox preview-link"
+						>
+							<i class="bi bi-zoom-in"></i>
+						</a>
+						
+					</div>
 				</div>
 
-				<div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-				<img src="assets/img/events-pictures/2.webp" class="img-fluid" alt="">
-				<div class="portfolio-info">
-					<h4>Product 2</h4>
-					<p>Lorem ipsum, dolor sit</p>
-					<a href="assets/img/events-pictures/2.webp" title="Product 2" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-					<a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-				</div>
-				</div>
-
-				<div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-				<img src="assets/img/events-pictures/3.webp" class="img-fluid" alt="">
-				<div class="portfolio-info">
-					<h4>Branding 2</h4>
-					<p>Lorem ipsum, dolor sit</p>
-					<a href="assets/img/events-pictures/3.webp" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-					<a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-				</div>
+				<div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-infant">
+					<img src="assets/img/events-pictures/infant-1.webp" class="img-fluid" alt="">
+					<div class="portfolio-info">
+						<h4>Infante 1</h4>
+						<p>Infante número 1</p>
+						<a 
+							href="assets/img/events-pictures/infant-1.webp" 
+							title="Infante 1" 
+							data-gallery="portfolio-gallery-infant" 
+							class="glightbox preview-link"
+						>
+							<i class="bi bi-zoom-in"></i>
+						</a>
+						
+					</div>
 				</div>
 
-				<div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-				<img src="assets/img/masonry-portfolio/masonry-portfolio-7.jpg" class="img-fluid" alt="">
-				<div class="portfolio-info">
-					<h4>App 3</h4>
-					<p>Lorem ipsum, dolor sit</p>
-					<a href="assets/img/masonry-portfolio/masonry-portfolio-7.jpg" title="App 3" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-					<a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-				</div>
-				</div>
-
-				<div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-				<img src="assets/img/events-pictures/1.webp" class="img-fluid" alt="">
-				<div class="portfolio-info">
-					<h4>Product 3</h4>
-					<p>Lorem ipsum, dolor sit</p>
-					<a href="assets/img/events-pictures/1.webp" title="Product 3" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-					<a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-				</div>
+				<div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-wedding">
+					<img src="assets/img/events-pictures/wedding-2.webp" class="img-fluid" alt="">
+					<div class="portfolio-info">
+						<h4> Boda 2</h4>
+						<p>Pareja número 2</p>
+						<a 
+							href="assets/img/events-pictures/wedding-2.webp" 
+							title="Pareja Número 2" 
+							data-gallery="portfolio-gallery-wedding" 
+							class="glightbox preview-link"
+						>
+							<i class="bi bi-zoom-in"></i>
+						</a>
+						
+					</div>
 				</div>
 
-				<div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-				<img src="assets/img/masonry-portfolio/masonry-portfolio-9.jpg" class="img-fluid" alt="">
-				<div class="portfolio-info">
-					<h4>Branding 3</h4>
-					<p>Lorem ipsum, dolor sit</p>
-					<a href="assets/img/masonry-portfolio/masonry-portfolio-9.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-					<a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+				<div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-infant">
+					<img src="assets/img/events-pictures/infant-2.webp" class="img-fluid" alt="">
+					<div class="portfolio-info">
+						<h4>Infante 2</h4>
+						<p>Infante número 2</p>
+						<a 
+							href="assets/img/events-pictures/infant-2.webp" 
+							title="Infante 2" 
+							data-gallery="portfolio-gallery-infant"
+							class="glightbox preview-link"
+						>
+							<i class="bi bi-zoom-in"></i>
+						</a>
+						
+					</div>
 				</div>
+				
+
+				<div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-infant">
+					<img src="assets/img/events-pictures/infant-4.webp" class="img-fluid" alt="">
+					<div class="portfolio-info">
+						<h4>Infante 4</h4>
+						<p>Infante número 4</p>
+						<a 
+							href="assets/img/events-pictures/infant-4.webp"
+							title="Infante 4"
+							data-gallery="portfolio-gallery-infant"
+							class="glightbox preview-link"
+						>
+							<i class="bi bi-zoom-in"></i>
+						</a>
+						
+					</div>
 				</div>
+
+				<div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-wedding">
+					<img src="assets/img/events-pictures/wedding-4.webp" class="img-fluid" alt="">
+					<div class="portfolio-info">
+						<h4> Boda 4</h4>
+						<p>Pareja número 4</p>
+						<a 
+							href="assets/img/events-pictures/wedding-4.webp" 
+							title="Pareja Número 4" 
+							data-gallery="portfolio-gallery-wedding" 
+							class="glightbox preview-link"
+						>
+							<i class="bi bi-zoom-in"></i>
+						</a>
+						
+					</div>
+				</div>
+
+				<div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-xv">
+					<img src="assets/img/events-pictures/xv-2.webp" class="img-fluid" alt="">
+					<div class="portfolio-info">
+						<h4>Quinceañera 2</h4>
+						<p>Quinceañera número 2</p>
+						<a 
+							href="assets/img/events-pictures/xv-2.webp"
+							title="Quinceañera 2"
+							data-gallery="portfolio-gallery-xv"
+							class="glightbox preview-link"
+						>
+							<i class="bi bi-zoom-in"></i>
+						</a>
+						
+					</div>
+				</div>
+
+				<div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-xv">
+					<img src="assets/img/events-pictures/xv-4.webp" class="img-fluid" alt="">
+					<div class="portfolio-info">
+						<h4>Quinceañera 4</h4>
+						<p>Quinceañera número 4</p>
+						<a 
+							href="assets/img/events-pictures/xv-4.webp"
+							title="Quinceañera 4"
+							data-gallery="portfolio-gallery-xv"
+							class="glightbox preview-link"
+						>
+							<i class="bi bi-zoom-in"></i>
+						</a>
+						
+					</div>
+				</div>
+
+				<div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-infant">
+					<img src="assets/img/events-pictures/infant-3.webp" class="img-fluid" alt="">
+					<div class="portfolio-info">
+						<h4>Infante 3</h4>
+						<p>Infante número 3</p>
+						<a 
+							href="assets/img/events-pictures/infant-3.webp"
+							title="Infante 3"
+							data-gallery="portfolio-gallery-infant"
+							class="glightbox preview-link"
+						>
+							<i class="bi bi-zoom-in"></i>
+						</a>
+						
+					</div>
+				</div>
+
+				<div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-xv">
+					<img src="assets/img/events-pictures/xv-3.webp" class="img-fluid" alt="">
+					<div class="portfolio-info">
+						<h4>Quinceañera 3</h4>
+						<p>Quinceañera número 3</p>
+						<a 
+							href="assets/img/events-pictures/xv-3.webp"
+							title="Quinceañera 3"
+							data-gallery="portfolio-gallery-xv"
+							class="glightbox preview-link"
+						>
+						<i class="bi bi-zoom-in"></i>
+					</a>
+						
+					</div>
+				</div>
+
+				<div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-wedding">
+					<img src="assets/img/events-pictures/wedding-3.webp" class="img-fluid" alt="">
+					<div class="portfolio-info">
+						<h4> Boda 3</h4>
+						<p>Pareja número 3</p>
+						<a 
+							href="assets/img/events-pictures/wedding-3.webp"
+							title="Pareja Número 3"
+							data-gallery="portfolio-gallery-wedding"
+							class="glightbox preview-link"
+						>
+							<i class="bi bi-zoom-in"></i>
+						</a>
+						
+					</div>
+				</div>				
 
 			</div>
 
@@ -758,7 +876,7 @@
 		
 		<div class="container section-title" data-aos="fade-up">
 			<h2>Equipo</h2>
-			<p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+			<p>Conozca a nuestro maravilloso equipo de profesionales</p>
 		</div>
 
 		<div class="container">
@@ -1369,7 +1487,7 @@
 							<div class="error-message"></div>
 							<div class="sent-message">Your message has been sent. Thank you!</div>
 
-							<button type="submit">Send Message</button>
+							<button type="submit">Enviar mensaje</button>
 						</div>
 
 					</div>
@@ -1449,14 +1567,13 @@
 			</div>
 		</div>
 
-		<div class="container copyright text-center mt-4">
+		<div class="container copyright text-center mt-2">
 			<p>© <span>Copyright</span> <strong class="px-1 sitename">Cine Studio CYC</strong> <span>Todos los Derechos Reservados</span></p>
-			<div class="credits">
-				
-				Designed by
-				<a href="https://bootstrapmade.com/">BootstrapMade</a>
-				Distributed by
-				<a href="https://themewagon.com">ThemeWagon
+			<div class="credits">				
+				Desarrollador por 
+				<a href="https://bootstrapmade.com/">DEV TEAM CINEMA</a>
+				con
+				<i class="bi bi-heart-fill" style="color: red;"></i>
 			</div>
 		</div>
 

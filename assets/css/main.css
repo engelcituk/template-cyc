@@ -914,14 +914,15 @@ section,
 }
 
 .hero .icon-box .title a {
-  color: var(--first-color);
+  color: var(--title-color);
   transition: 0.3s;
 }
 
 .hero .icon-box .description {
   font-size: 15px;
   margin-bottom: 0;
-  color: color-mix(in srgb, var(--title-color), transparent 40%);
+/*   color: color-mix(in srgb, var(--title-color), transparent 40%);
+ */  color: var(--title-color);
   
 }
 

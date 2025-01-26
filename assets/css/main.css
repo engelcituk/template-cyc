@@ -249,7 +249,7 @@ p, span{
 
 .header .btn-getstarted,
 .header .btn-getstarted:focus {
-  color: var(--title-color);
+  color: #fff;
   background: var(--first-color);
   font-size: 14px;
   padding: 8px 25px;
@@ -260,7 +260,7 @@ p, span{
 
 .header .btn-getstarted:hover,
 .header .btn-getstarted:focus:hover {
-  color: var(--title-color);
+  color: #fff;
   background: color-mix(in srgb, var(--first-color), transparent 15%);
 }
 
@@ -705,13 +705,13 @@ p, span{
 
 .scroll-top i {
   font-size: 24px;
-  color: var(--title-color);
+  color: #FFF;
   line-height: 0;
 }
 
 .scroll-top:hover {
   background-color: color-mix(in srgb, var(--first-color), transparent 20%);
-  color: var(--title-color);
+  color: #FFF;
 }
 
 .scroll-top.active {
@@ -858,15 +858,11 @@ section,
   font-size: 56px;
   font-weight: 700;
   line-height: 72px;  
-  color: #000;
 }
 
 .hero p {
   margin: 10px 0 0 0;
   font-size: 22px;
-  /* color: color-mix(in srgb, var(--text-color), transparent 30%); */
-  color: #000;
-
 }
 
 @media (max-width: 992px) {
@@ -882,7 +878,7 @@ section,
 }
 
 .hero .btn-get-started {
-  color: var(--title-color);
+  color: #fff;
   background: var(--first-color);
   font-weight: 600;
   font-size: 16px;
@@ -971,7 +967,7 @@ section,
 
 .about .read-more {
   background: var(--first-color);
-  color: var(--title-color);
+  color: #fff;
   font-family: var(--heading-font);
   font-weight: 500;
   font-size: 16px;
@@ -999,6 +995,9 @@ section,
   transform: translate(5px, 0);
 }
 
+.read-more span {
+  color: #FFF;
+}
 /*--------------------------------------------------------------
 # Stats Section
 --------------------------------------------------------------*/
